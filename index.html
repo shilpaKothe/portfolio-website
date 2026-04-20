@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shilpa Kothe Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shilpa Kothe Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>Shilpa Kothe</h1>
-  <p>Quality Engineering | Web Developer</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <h1>Shilpa Kothe</h1>
+    <p>Quality Engineer | Web Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="btn">Download Resume</a>
+  </div>
 </header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hello, I'm Shilpa 👋</h2>
+    <p>I build clean, responsive websites and have strong knowledge in software testing and automation.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
 
 <section id="about" class="section">
   <h2>About Me</h2>
-  <p>I am a Computer Science graduate trained in Quality Engineering. I have skills in testing, automation, and web development. I am a quick learner and passionate about technology.</p>
+  <p>
+    I am a Computer Science graduate trained in Quality Engineering. 
+    I specialize in manual testing, Selenium automation, and front-end development.
+    I am passionate about building reliable and user-friendly applications.
+  </p>
 </section>
 
 <section id="skills" class="section">
   <h2>Skills</h2>
-  <div class="cards">
+  <div class="grid">
     <div class="card">HTML</div>
     <div class="card">CSS</div>
     <div class="card">JavaScript</div>
@@ -38,21 +54,32 @@
 
 <section id="projects" class="section">
   <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Student Result Management</h3>
-      <p>System to manage student results with database connectivity.</p>
-    </div>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Responsive personal portfolio built using HTML, CSS, JS.</p>
-    </div>
+
+  <div class="project-card">
+    <h3>Student Result Management System</h3>
+    <p>
+      Developed a system to manage student records and results.
+      Used database connectivity and implemented CRUD operations.
+    </p>
   </div>
+
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>
+      Designed and developed a responsive personal portfolio using HTML, CSS, and JavaScript.
+    </p>
+  </div>
+
 </section>
 
 <section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: yourmail@example.com</p>
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
