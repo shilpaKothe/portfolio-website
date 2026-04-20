@@ -1,16 +1,15 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
-  background: #f5f7fa;
+  background: #f4f6f9;
 }
 
 /* Header */
 header {
-  text-align: center;
-  padding: 40px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
   color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 nav a {
@@ -20,8 +19,20 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #4e54c8;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
 /* Sections */
@@ -30,8 +41,8 @@ nav a:hover {
   text-align: center;
 }
 
-/* Cards */
-.cards {
+/* Grid */
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,14 +52,40 @@ nav a:hover {
 .card {
   background: white;
   padding: 20px;
+  width: 150px;
   border-radius: 10px;
-  width: 200px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+/* Projects */
+.project-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #4e54c8;
+  color: white;
+  border: none;
 }
 
 /* Footer */
@@ -57,12 +94,4 @@ footer {
   padding: 20px;
   background: #333;
   color: white;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
 }
