@@ -1,97 +1,133 @@
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f9;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
 header {
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #111;
   color: white;
-  text-align: center;
-  padding: 40px 20px;
 }
 
 nav a {
-  margin: 10px;
+  margin-left: 20px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: white;
-  color: #4e54c8;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* Hero */
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-/* Sections */
-.section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-/* Grid */
-.grid {
+  height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+}
+
+.hero h1 span {
+  color: yellow;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.dark {
+  background: #f4f4f4;
+}
+
+/* SKILLS */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
   padding: 20px;
-  width: 150px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-/* Projects */
-.project-card {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.card:hover {
+  transform: translateY(-10px);
 }
 
-/* Contact */
+/* CONTACT */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+  width: 300px;
   margin: auto;
 }
 
-input, textarea, button {
+form input, form textarea {
+  margin: 10px 0;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
-button {
-  background: #4e54c8;
+form button {
+  padding: 10px;
+  background: black;
   color: white;
   border: none;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
+  background: #111;
   color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
