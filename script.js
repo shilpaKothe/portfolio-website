@@ -1,6 +1,8 @@
-console.log("Portfolio Loaded");
+// Smooth scroll highlight
+const links = document.querySelectorAll("nav a");
 
-// Example: Alert on contact click
-document.querySelector("#contact").addEventListener("click", () => {
-    console.log("Contact section opened");
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    console.log("Navigated to section");
+  });
 });
